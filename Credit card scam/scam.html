@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            display: flex;
+        }
+
+        div {
+            margin-right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1>I know U want to give me Your credit card info</h1>
+        <img src="https://stayhipp.com/wp-content/uploads/2020/10/juan-horse-memes-.jpg" alt="">
+    </div>
+
+    <div>
+        <p>Credit card number</p>
+        <input type="text" id="ss" />
+        <p>Security code</p>
+        <input type="text" id="2" />
+        <p>Password</p>
+        <input type="text" id="3" />
+        <button onclick="submit()">OK</button>
+    </div>
+
+    <script>
+        const submit = () => {
+            const creditCardNumber = document.getElementById("ss").value;
+            const creditCardSecurity = document.getElementById("2").value;
+            const creditCardPassword = document.getElementById("3").value;
+
+            console.log(creditCardNumber);
+            console.log(creditCardSecurity);
+            console.log(creditCardPassword);
+        }
+    </script>
+</body>
+
+</html>
